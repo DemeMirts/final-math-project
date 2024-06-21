@@ -153,13 +153,15 @@ header, nav, main, aside, footer {
 .footer .logos img {
     max-width: 50px;
     max-height: 50px;
-}#leftsidebar ul li {
+}
+#leftsidebar ul li {
     background-image: url('./images/arrow.png');
 }
 
 #rightsidebar ul li {
     background-image: url('./images/tick.png');
-}.sidebar ul li {
+}
+.sidebar ul li {
     margin-bottom: 10px;
     position: relative;
     padding-left: 25px; 
@@ -167,6 +169,10 @@ header, nav, main, aside, footer {
     background-repeat: no-repeat;
     background-position: left center; 
 }
+.sidebar a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #5D12E7;}
 
 @media (max-width: 768px) {
     #header {

@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -21,7 +21,6 @@ header, nav, main, aside {
     margin-bottom: 20px;
 }
 
-/* Header styles */
 #header {
     display: flex;
     justify-content: space-between;
@@ -36,8 +35,12 @@ header, nav, main, aside {
     text-decoration: none;
     font-size: 2.5em;
 }
+.sidebar a{
+    text-decoration: none;
+    font-size: 19px;
+    color: #5D12E7;
+}
 
-/* Search box styles */
 #searchBox {
     background: linear-gradient(#E4D2B9, #B7E953);
     padding: 10px;
@@ -60,7 +63,7 @@ header, nav, main, aside {
     cursor: pointer;
 }
 
-/* Menu styles */
+
 #menu {
     background: linear-gradient(#F8F594, #D5D533);
     padding: 10px 0;
@@ -86,7 +89,7 @@ header, nav, main, aside {
     color: #C34FBD;
 }
 
-/* Introduction section */
+
 #introduction {
     background: linear-gradient(#E5F2BB, #B7E952);
     padding: 20px;
@@ -104,7 +107,6 @@ header, nav, main, aside {
     color: #628F19;
 }
 
-/* Sidebar styles */
 .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -132,10 +134,10 @@ header, nav, main, aside {
 .sidebar ul li {
     margin-bottom: 10px;
     position: relative;
-    padding-left: 25px; /* For left sidebar */
-    padding-right: 25px; /* For right sidebar */
+    padding-left: 25px; 
+    padding-right: 25px;
     background-repeat: no-repeat;
-    background-position: left center; /* For left sidebar */
+    background-position: left center; 
 }
 
 #leftsidebar ul li {
@@ -146,7 +148,7 @@ header, nav, main, aside {
     background-image: url('./images/tick.png');
 }
 
-/* Image placeholder */
+
 .image-placeholder {
     background-color: #f0f0f0;
     border: 1px solid #ccc;

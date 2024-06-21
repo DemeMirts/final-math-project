@@ -162,7 +162,8 @@ header, nav, main, aside {
 }
 
 .image-placeholder img {
-    max-width: 100%;
+    max-width: 111%;
+    height: 100%;
     border-radius: 10px;
 }
 

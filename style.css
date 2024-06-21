@@ -56,7 +56,6 @@ header, nav, main, aside, footer {
     cursor: pointer;
 }
 
-/* Menu styles */
 #menu {
     background: linear-gradient(#F8F594, #D5D533);
     padding: 10px 0;
@@ -82,7 +81,6 @@ header, nav, main, aside, footer {
     color: #C34FBD;
 }
 
-/* Introduction section */
 #introduction {
     background: linear-gradient(#E5F2BB, #B7E952);
     padding: 20px;
@@ -100,7 +98,7 @@ header, nav, main, aside, footer {
     color: #628F19;
 }
 
-/* Sidebar styles */
+
 .content-wrapper {
     display: flex;
     justify-content: space-between;
@@ -139,15 +137,37 @@ header, nav, main, aside, footer {
     color: #C34FBD;
 }
 
-/* Footer styles */
 .footer {
     background: linear-gradient(#F6F398, #D5D533);
     text-align: center;
     padding: 10px;
     border-radius: 5px;
 }
+.footer .logos {
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    gap: 20px;
+    margin-top: 10px;
+}
+.footer .logos img {
+    max-width: 50px;
+    max-height: 50px;
+}#leftsidebar ul li {
+    background-image: url('./images/arrow.png');
+}
 
-/* Media queries for responsiveness */
+#rightsidebar ul li {
+    background-image: url('./images/tick.png');
+}.sidebar ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px; 
+    padding-right: 25px;
+    background-repeat: no-repeat;
+    background-position: left center; 
+}
+
 @media (max-width: 768px) {
     #header {
         flex-direction: column;

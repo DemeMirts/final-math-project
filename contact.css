@@ -1,22 +1,21 @@
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff9c4;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
 }
 
 .navbar {
-    background-color: #388e3c; 
+    background-color: #4CAF50;
     padding: 15px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: inline-block;
 }
 
 .navbar ul li {
@@ -30,6 +29,11 @@ body {
     color: white;
 }
 
+.navbar ul li:last-child:after {
+    content: "";
+    margin-left: 0;
+}
+
 .navbar ul li a {
     text-decoration: none;
     color: white;
@@ -40,29 +44,93 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #d32f2f;
+    background-color: #388E3C;
 }
 
 .contact-container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto;
-    padding: 20px;
-    border: 2px solid #ffeb3b; 
+    padding: 30px;
+    border: 2px solid #FFC107;
     border-radius: 10px;
-    background-color: #e8f5e9; 
+    background-color: #FFFDE7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #388e3c; 
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.contact-details, .contact-form, .map-container {
+    margin-bottom: 30px;
 }
 
 .contact-details p {
     font-size: 18px;
-    color: #4e342e; 
+    color: #333;
     margin: 10px 0;
+    line-height: 1.6;
+}
+
+.contact-details span {
+    font-weight: bold;
+    color: #333;
 }
 
 .contact-details a {
-    color: #d32f2f; 
+    color: #D32F2F;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-details a:hover {
+    color: #9A0007;
+}
+
+.contact-form h2, .map-container h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #388E3C;
+}
+
+.map-container iframe {
+    width: 100%;
+    border-radius: 10px;
 }

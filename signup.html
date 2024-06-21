@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,17 +10,31 @@
     <div class="container">
         <div class="header">
             <h1>Sign Up</h1>
+            <p>Join us and start your learning journey today!</p>
         </div>
         <div class="form-container">
             <form action="/submit-signup" method="post" onsubmit="window.location.href='index2.html'; return false;">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
                 <button type="submit">Sign Up</button>
             </form>
+        </div>
+        <div class="extra-content">
+            <div class="image-placeholder">
+                <img src="images/images.jpeg" >
+            </div>
+            <div class="code-placeholder">
+            </div>
         </div>
     </div>
 </body>

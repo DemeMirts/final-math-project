@@ -1,199 +1,172 @@
-#body {
-    font: Arial, Helvetica, sans-serif;
+/* General styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 #container {
-    width: 1050px;
-    margin: 0px auto;
-
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
-#brand {
-    float: left;
+header, nav, main, aside, footer {
+    margin-bottom: 20px;
 }
 
-h1 a {
-    font-size: 50px;
-    font-weight: 100;
-    color: #861BBF;
-    text-decoration: none;
-}
-
+/* Header styles */
 #header {
-    height: 100px;
-    padding: 10px 0px;
-}
-
-
-#searchBox {
-    float: right;
-    background: linear-gradient(#E4D2B9, #B7E953);
-    background: -moz-linear-gradient(#E4D2B9, #B7E953);
-    background: -webkit-linear-gradient(#E4D2B9, #B7E953);
-    background: -o-linear-gradient(#E4D2B9, #B7E953);
-    background: -ms-linear-gradient(#E4D2B9, #B7E953);
-    width: 400px;
-    height: 50px;
-    padding: 20px 20px 0 20px;
-    margin-top: 20px;
-}
-
-.text {
-    float: left;
-    width: 200px;
-    padding: 5px;
-    font-size: 15px;
-    color: #E36A0C;
-    border: 1px solid#C8D83E;
-}
-
-.submit {
-    float: right;
-    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #861BBF;
     color: white;
+    padding: 10px 20px;
+}
+
+#brand h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+/* Search box styles */
+#searchBox {
+    background: linear-gradient(#E4D2B9, #B7E953);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+#searchBox .text {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #C8D83E;
+    margin-right: 10px;
+}
+
+#searchBox .submit {
+    padding: 5px 10px;
     background: #A751D5;
-    font-size: 15px;
-    font-weight: bold;
+    color: white;
     border: 1px solid #A751D5;
+    cursor: pointer;
 }
 
-.clear {
-    clear: both;
-}
-
-ul {
-    list-style: none;
-}
-
-
+/* Menu styles */
 #menu {
-    height: 70px;
     background: linear-gradient(#F8F594, #D5D533);
-    background: -moz-linear-gradient(#F8F594, #D5D533);
-    background: -o-linear-gradient(#F8F594, #D5D533);
-    background: -webkit-linear-gradient(#F8F594, #D5D533);
-    background: -ms-linear-gradient(#F8F594, #D5D533);
-    padding: 7px 0px;
+    padding: 10px 0;
 }
 
-#menu ul li {
-    float: left;
-    padding: 0px 30px;
-    height: 30px;
-    border-right: 1px solid #5D12E7;
+#menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-
-#menu ul li:last-child {
-    border-right: none;
-}
-
 
 #menu ul li a {
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 17px;
     color: #5D12E7;
-    line-height: 30px;
-    transition: font-size 0.3s ease;
-    -o-transition: font-size 0.3s ease;
-    -webkit-transition: font-size 0.3s ease;
-    -ms-transition: font-size 0.3s ease;
-    -moz-transition: font-size 0.3s ease;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
 }
 
 #menu ul li a:hover,
 #menu ul li .active {
-    font-size: 20px;
-    font-weight: bold;
     color: #C34FBD;
 }
 
+/* Introduction section */
 #introduction {
     background: linear-gradient(#E5F2BB, #B7E952);
-    background: -o-linear-gradient(#E5F2BB, #B7E952);
-    background: -moz-linear-gradient(#E5F2BB, #B7E952);
-    background: -ms-linear-gradient(#E5F2BB, #B7E952);
-    background: -webkit-linear-gradient(#E5F2BB, #B7E952);
-    padding: 30px;
-    margin: 16px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 #introduction h3 {
-    font-size: 45px;
-    font-weight: normal;
+    font-size: 2em;
     color: #316901;
 }
 
 #introduction p {
-    font-size: 25px;
+    font-size: 1.2em;
     color: #628F19;
 }
 
+/* Sidebar styles */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
 .sidebar {
-    height: 500px;
-    width: 450px;
+    background-color: white;
     border: 1px solid #BA4F6F;
-    border-radius: 20px;
-    padding: 10px 30px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
 }
 
 .sidebar h3 {
     color: #B314DB;
-    font-size: 30px;
+    font-size: 1.5em;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
 }
 
 .sidebar ul li a {
     text-decoration: none;
-    font-size: 20px;
     color: #5D12E7;
+    font-size: 1.1em;
 }
 
-.sidebar ul {
-    padding-top: 8px;
-}
-
-.sidebar ul li a:hover,
-.sidebar ul li a:active {
-    text-decoration: none;
+.sidebar ul li a:hover {
     color: #C34FBD;
-    font-size: 23px;
-    font-weight: bold;
-    transition: font-size 0.3s ease;
-    -o-transition: font-size 0.3s ease;
-    -webkit-transition: font-size 0.3s ease;
-    -ms-transition: font-size 0.3s ease;
-    -moz-transition: font-size 0.3s ease;
 }
 
-#leftsidebar {
-    float: left;
-}
-
-
-#leftsidebar ul li {
-    padding-bottom: 8px;
-    list-style-image: url(./images/arrow.png);
-    padding-left: 5px;
-
-}
-
-#rightsidebar {
-    float: right;
-}
-
-#rightsidebar ul li {
-    padding-bottom: 20px;
-    list-style-image: url(./images/tick.png);
-    padding-left: 5px;
-}
-
+/* Footer styles */
 .footer {
-    height: 60px;
     background: linear-gradient(#F6F398, #D5D533);
-    background: -o-linear-gradient(#F6F398, #D5D533);
-    background: -moz-linear-gradient(#F6F398, #D5D533);
-    background: -ms-linear-gradient(#F6F398, #D5D533);
-    background: -webkit-linear-gradient(#F6F398, #D5D533);
-    padding: 10px 20px;
-    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #searchBox {
+        margin-top: 10px;
+    }
+
+    #menu ul {
+        flex-direction: column;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
 }

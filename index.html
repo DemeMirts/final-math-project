@@ -1,65 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Maths Website Demetre Mirtskhulava</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Website - Demetre Mirtskhulava</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
     <div id="container">
-        <div id="header">
+        <header id="header">
             <div id="brand">
                 <h1><a href="#">Maths is the Fun Way</a></h1>
             </div>
             <div id="searchBox">
                 <form method="get">
-                    <input type="text" class="text">
-                    <input type="submit" class="submit" value="Search a topic">
+                    <input type="text" class="text" placeholder="Search...">
+                    <input type="submit" class="submit" value="Search">
                 </form>
             </div>
-            <div class="clear"></div>
-        </div>
-        <div id="menu">
+        </header>
+        <nav id="menu">
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Online Tutorials</a></li>
                 <li><a href="signup.html">Sign Up</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
-        </div>
-        <div id="introduction">
-            <h3>Do you need help with Maths?</h3>
-            <p>this is my website about math...</p>
-        </div>
-
-        <div id="leftsidebar" class="sidebar">
-            <h3>Go to:</h3>
-            <ul>
-                <li><a href="https://ka.khanacademy.org/math/math1/math1-one-var-eq-ineq/math1-variables-on-both-sides/v/equations-3">Course 1</a></li>
-                <li><a href="#">course 2.</a></li>
-                <li><a href="#">course 3</a></li>
-                <li><a href="signup.html">For More Sign Up</a></li>
-            </ul>
-        </div>
-        <div id="rightsidebar" class="sidebar">
-            <h3>Why us?</h3>
-            <ul>
-                <li><a href="#">Our teachers are available at any time.</a></li>
-                <li><a href="#">Available of laptop, Tablets and Phones.</a></li>
-                <li><a href="#">30 day Money Back Guarantee.</a></li>
-                <li><a href="#">Interactive games for an enjoyable learning experience.</a></li>
-                <li><a href="#">Learn at your own pace.</a></li>
-                <li><a href="#">Complete curriculum.</a></li>
-            </ul>
-        </div>
-        <div class="clear"></div>
-        <footer class="footer">
-            <div>
-                <p>Demetre Mirtskhulava&copy; 2024 </p>
+        </nav>
+        <main>
+            <section id="introduction">
+                <h3>Do you need help with Maths?</h3>
+                <p>This is my website about math...</p>
+            </section>
+            <div class="content-wrapper">
+                <aside id="leftsidebar" class="sidebar">
+                    <h3>Go to:</h3>
+                    <ul>
+                        <li><a href="https://ka.khanacademy.org/math/math1/math1-one-var-eq-ineq/math1-variables-on-both-sides/v/equations-3">Course 1</a></li>
+                        <li><a href="#">Course 2</a></li>
+                        <li><a href="#">Course 3</a></li>
+                        <li><a href="signup.html">For More Sign Up</a></li>
+                    </ul>
+                </aside>
+                <aside id="rightsidebar" class="sidebar">
+                    <h3>Why us?</h3>
+                    <ul>
+                        <li><a href="#">Our teachers are available at any time.</a></li>
+                        <li><a href="#">Available on laptops, tablets, and phones.</a></li>
+                        <li><a href="#">30-day Money Back Guarantee.</a></li>
+                        <li><a href="#">Interactive games for an enjoyable learning experience.</a></li>
+                        <li><a href="#">Learn at your own pace.</a></li>
+                        <li><a href="#">Complete curriculum.</a></li>
+                    </ul>
+                </aside>
             </div>
+        </main>
+        <footer class="footer">
+            <p>Demetre Mirtskhulava&copy; 2024</p>
         </footer>
     </div>
 </body>
-
 </html>
